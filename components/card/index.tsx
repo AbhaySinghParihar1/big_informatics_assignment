@@ -49,7 +49,7 @@ const Card: React.FC<RenderItemProps> = ({ item }) => {
           <Text>{`${item.location.city} ${item.location.country}`}</Text>
         </View>
         <View style={{ flex: 1, flexDirection: "row" }}>
-          <View style={styles.imageContainer}>
+          <View style={styles.tagRedContainer}>
             <Text style={styles.tagContainer}>Music</Text>
           </View>
           <View style={styles.tagGreenContainer}>
@@ -97,6 +97,14 @@ const styles = StyleSheet.create({
   },
   tagGreenContainer: {
     backgroundColor: "green",
+    padding: 2,
+    marginTop: 4,
+    borderRadius: 4,
+    maxWidth: 55,
+    marginLeft: 6
+  },
+  tagRedContainer: {
+    backgroundColor: "red",
     padding: 2,
     marginTop: 4,
     borderRadius: 4,
